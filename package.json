@@ -1,0 +1,21 @@
+{
+  "name": "jsworkshops-service-workers",
+  "version": "1.0.0",
+  "description": "Service Workers tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "service",
+    "workers",
+    "ES6"
+  ],
+  "author": "Marcos Cáceres",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.14.0"
+  }
+}
