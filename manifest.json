@@ -5,7 +5,7 @@
       {"src": "favicon.ico", "sizes":"16x16,32x32,48x28,64x64,128x128,256x256"},
       {"src": "images/webmob.svg", "sizes":"any"}
   ],
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "natural"
 }
