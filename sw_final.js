@@ -23,9 +23,14 @@ self.addEventListener("activate", () => {
   //delete old caches
   async.task(function*() {
     const keys = yield caches.keys();
-    yield keys
-      .filter(key => key !== SITE_CACHE && key.startsWith("site-"))
-      .map(key => caches.delete(key));
+    const promisesToDelete = keys
+      .filter(
+        key => key !== SITE_CACHE && key.startsWith("site-")
+      )
+      .map(
+        key => caches.delete(key)
+      );
+    yield Promise.all(promisesToDelete);
   });
 });
 
